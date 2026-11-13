@@ -6,6 +6,7 @@ import ProductsPage from '@/app/ProductsPage'
 import ApplyPage from '@/app/ApplyPage'
 import ContactPage from '@/app/ContactPage'
 import AboutPage from '@/app/AboutPage'
+import ProductDetailPage from '@/app/ProductDetailPage'
 
 const router = createBrowserRouter(
 	[
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
 			children: [
 				{ path: '/', element: <HomePage /> },
 				{ path: '/products', element: <ProductsPage /> },
+				{ path: '/products/:id', element: <ProductDetailPage /> },
 				{ path: '/solutions', element: <ProductsPage /> },
 				{ path: '/apply', element: <ApplyPage /> },
 				{ path: '/contact', element: <ContactPage /> },

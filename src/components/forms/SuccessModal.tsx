@@ -47,7 +47,7 @@ export function SuccessModal({ id, product, plan, phone, onClose }: Props) {
           ))}
         </ol>
         <Link to="/" onClick={onClose} className="mt-6 flex w-full items-center justify-center rounded-full bg-primary py-3 text-sm font-semibold text-white dark:bg-secondary dark:text-primary-950">{t('ok.home')}</Link>
-        <a href={site.telegramUrl} target="_blank" rel="noopener noreferrer" className="mt-2 flex w-full items-center justify-center gap-2 rounded-full border border-sky-line py-3 text-sm font-semibold dark:border-night-line"><Send size={14} />{t('ok.tg')} ({site.telegram})</a>
+        <a href={site.telegramUrl} target="_blank" rel="noopener noreferrer" className="mt-2 flex w-full items-center justify-center gap-2 rounded-full border border-sky-line py-3 text-sm font-semibold dark:border-night-line"><Send size={14} /><li><a className="font-medium hover:text-secondary-700" href={site.telegramUrl} target="_blank" rel="noopener noreferrer">Telegram</a></li>)</a>
       </div>
     </div>
   )
